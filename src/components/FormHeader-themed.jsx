@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-export default function FormHeader({ theme }) {
+export default function FormHeader({ theme, currentSection }) {
   return (
     <motion.header 
       style={{
@@ -33,16 +33,18 @@ export default function FormHeader({ theme }) {
           >
             Franchise Disclosure Document Questionnaire
           </h1>
-          <p 
-            className="text-base max-w-3xl mx-auto leading-relaxed"
-            style={{ 
-              color: theme.name === 'dark' 
-                ? 'rgba(229, 231, 235, 0.8)' 
-                : 'rgba(107, 114, 128, 1)' 
-            }}
-          >
-            Welcome to The Franchise Firm LLP. This Questionnaire is designed to gather the information that we will need in order to prepare the Franchise Disclosure Document (or "FDD") for your franchise program in accordance with the Federal Trade Commission's ("FTC") amended Franchise Rule and applicable state law. While the Questionnaire is lengthy, it is important for you to provide as much relevant and responsive information as possible. Your completion of the Questionnaire will assist us in preparing your FDD quickly and efficiently. Please feel free to contact us if you are not sure how to answer a particular question or would like to discuss a particular response in detail. (The franchising company is referred to in the Questionnaire as the "Franchisor," "you" or "your.")
-          </p>
+          {currentSection === 0 && (
+            <p 
+              className="text-base max-w-3xl mx-auto leading-relaxed"
+              style={{ 
+                color: theme.name === 'dark' 
+                  ? 'rgba(229, 231, 235, 0.8)' 
+                  : 'rgba(107, 114, 128, 1)' 
+              }}
+            >
+              Welcome to The Franchise Firm LLP. This Questionnaire is designed to gather the information that we will need in order to prepare the Franchise Disclosure Document (or "FDD") for your franchise program in accordance with the Federal Trade Commission's ("FTC") amended Franchise Rule and applicable state law. While the Questionnaire is lengthy, it is important for you to provide as much relevant and responsive information as possible. Your completion of the Questionnaire will assist us in preparing your FDD quickly and efficiently. Please feel free to contact us if you are not sure how to answer a particular question or would like to discuss a particular response in detail. (The franchising company is referred to in the Questionnaire as the "Franchisor," "you" or "your.")
+            </p>
+          )}
         </div>
       </div>
     </motion.header>

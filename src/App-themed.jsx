@@ -94,7 +94,7 @@ function App({ theme }) {
       className="min-h-screen"
       style={{ background: theme.colors.background }}
     >
-      <FormHeader theme={theme} />
+      <FormHeader theme={theme} currentSection={currentSection} />
       
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <ProgressBar 
