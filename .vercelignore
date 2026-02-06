@@ -1,0 +1,12 @@
+node_modules
+.git
+src
+*.md
+vite.config*.js
+package*.json
+public
+index.html
+index-light.html
+index-dark.html
+tailwind.config.js
+postcss.config.js

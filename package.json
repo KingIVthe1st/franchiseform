@@ -4,10 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev:light": "vite --config vite.config-light.js",
+    "dev:dark": "vite --config vite.config-dark.js",
+    "build:light": "vite build --config vite.config-light.js",
+    "build:dark": "vite build --config vite.config-dark.js",
+    "build:both": "npm run build:light && npm run build:dark",
+    "preview:light": "vite preview --config vite.config-light.js --outDir dist-light",
+    "preview:dark": "vite preview --config vite.config-dark.js --outDir dist-dark",
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "^19.2.0",
