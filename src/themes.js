@@ -57,7 +57,7 @@ export const darkTheme = {
     shadow: '0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2)',
     shadowHover: '0 25px 50px -12px rgba(0, 0, 0, 0.6)',
   },
-  logo: '/franchiseform/dark/logo-dark.jpg',
+  logo: '/franchiseform/logo-dark.jpg',
   logoStyle: {
     filter: 'none',
     background: 'transparent',
