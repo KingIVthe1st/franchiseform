@@ -59,12 +59,8 @@ function App({ theme }) {
       }
     })
     
-    formDataToSend.append('access_key', 'YOUR_WEB3FORMS_KEY')
-    formDataToSend.append('subject', 'New FDD Questionnaire Submission')
-    formDataToSend.append('from_name', 'MyFranchiseMachine Intake Form')
-    
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('https://intake.myfranchisemachine.com/submit-form.php', {
         method: 'POST',
         body: formDataToSend
       })
