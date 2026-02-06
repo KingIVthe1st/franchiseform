@@ -24,7 +24,7 @@ export const lightTheme = {
     shadow: '0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02)',
     shadowHover: '0 25px 50px -12px rgba(0, 0, 0, 0.1)',
   },
-  logo: '/franchiseform/logo.jpg',
+  logo: '/logo.jpg',
   logoStyle: {
     filter: 'none',
     background: 'white',
@@ -57,7 +57,7 @@ export const darkTheme = {
     shadow: '0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(42, 197, 215, 0.1)',
     shadowHover: '0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(42, 197, 215, 0.2)',
   },
-  logo: '/franchiseform/logo-dark.jpg',
+  logo: '/logo-dark.jpg',
   logoStyle: {
     filter: 'drop-shadow(0 10px 30px rgba(42, 197, 215, 0.3))',
     background: 'transparent',
