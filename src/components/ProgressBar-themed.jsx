@@ -24,9 +24,10 @@ export default function ProgressBar({ progress, currentSection, totalSections, t
           style={{ 
             background: theme.colors.progressFill,
             boxShadow: theme.name === 'dark' 
-              ? '0 0 20px rgba(42, 197, 215, 0.5)' 
+              ? '0 0 30px rgba(42, 197, 215, 0.6), 0 0 60px rgba(42, 197, 215, 0.3)' 
               : '0 2px 4px rgba(42, 197, 215, 0.3)'
           }}
+          className={theme.name === 'dark' ? 'animate-glow' : ''}
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{ type: 'spring', stiffness: 100, damping: 20 }}

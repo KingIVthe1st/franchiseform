@@ -38,7 +38,7 @@ export const darkTheme = {
   colors: {
     background: 'linear-gradient(135deg, #0a0e1a 0%, #0f1b2d 50%, #1a2332 100%)',
     cardBg: 'rgba(255, 255, 255, 0.03)',
-    cardBorder: 'rgba(42, 197, 215, 0.1)',
+    cardBorder: 'rgba(42, 197, 215, 0.15)',
     headerBg: 'rgba(0, 0, 0, 0.4)',
     headerText: '#ffffff',
     bodyText: '#e5e7eb',
@@ -52,14 +52,14 @@ export const darkTheme = {
     buttonSecondaryBorder: 'rgba(255, 255, 255, 0.2)',
     progressBg: 'rgba(255, 255, 255, 0.1)',
     progressFill: 'linear-gradient(90deg, #2AC5D7 0%, #1ea5b5 100%)',
-    sectionNumberBg: 'rgba(42, 197, 215, 0.15)',
+    sectionNumberBg: 'rgba(42, 197, 215, 0.2)',
     sectionNumberText: '#2AC5D7',
-    shadow: '0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2)',
-    shadowHover: '0 25px 50px -12px rgba(0, 0, 0, 0.6)',
+    shadow: '0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(42, 197, 215, 0.1)',
+    shadowHover: '0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(42, 197, 215, 0.2)',
   },
   logo: '/franchiseform/logo-dark.jpg',
   logoStyle: {
-    filter: 'none',
+    filter: 'drop-shadow(0 10px 30px rgba(42, 197, 215, 0.3))',
     background: 'transparent',
   }
 }

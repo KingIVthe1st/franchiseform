@@ -15,7 +15,8 @@ export default function FormSection({ section, formData, onChange, theme }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
       whileHover={{
-        boxShadow: theme.colors.shadowHover
+        boxShadow: theme.colors.shadowHover,
+        y: -5
       }}
     >
       <div className="mb-8">
@@ -24,7 +25,9 @@ export default function FormSection({ section, formData, onChange, theme }) {
             className="w-12 h-12 rounded-full flex items-center justify-center"
             style={{ 
               background: theme.colors.sectionNumberBg,
-              boxShadow: theme.name === 'dark' ? '0 0 20px rgba(42, 197, 215, 0.2)' : 'none'
+              boxShadow: theme.name === 'dark' 
+                ? '0 0 25px rgba(42, 197, 215, 0.4), inset 0 0 20px rgba(42, 197, 215, 0.1)' 
+                : 'none'
             }}
           >
             <span 

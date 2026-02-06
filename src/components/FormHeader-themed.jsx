@@ -6,7 +6,10 @@ export default function FormHeader({ theme, currentSection }) {
       style={{
         background: theme.colors.headerBg,
         backdropFilter: theme.name === 'dark' ? 'blur(20px)' : 'none',
-        boxShadow: theme.colors.shadow
+        boxShadow: theme.name === 'dark' 
+          ? '0 10px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(42, 197, 215, 0.1)' 
+          : theme.colors.shadow,
+        borderBottom: theme.name === 'dark' ? '1px solid rgba(42, 197, 215, 0.1)' : 'none'
       }}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
