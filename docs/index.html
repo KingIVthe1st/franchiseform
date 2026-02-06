@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDD Form - Choose Version</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        .versions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .versions {
+                grid-template-columns: 1fr;
+            }
+        }
+        .version-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        .version-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .version-title {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .version-desc {
+            color: rgba(255,255,255,0.8);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            background: white;
+            color: #667eea;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        .version-card:hover .btn {
+            background: #2AC5D7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍔 FDD Questionnaire</h1>
+        <p>Choose your preferred version</p>
+        
+        <div class="versions">
+            <a href="index-light.html" class="version-card">
+                <div class="icon">☀️</div>
+                <div class="version-title">Light Version</div>
+                <div class="version-desc">Clean, corporate, professional</div>
+                <div class="btn">View Light →</div>
+            </a>
+            
+            <a href="dark/index-dark.html" class="version-card">
+                <div class="icon">🌙</div>
+                <div class="version-title">Dark Version</div>
+                <div class="version-desc">Modern, sleek, premium</div>
+                <div class="btn">View Dark →</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
