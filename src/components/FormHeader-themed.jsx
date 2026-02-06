@@ -17,8 +17,12 @@ export default function FormHeader({ theme }) {
           <img 
             src={theme.logo}
             alt="MyFranchiseMachine" 
-            className="h-16 w-auto"
-            style={theme.logoStyle}
+            className="w-auto"
+            style={{
+              ...theme.logoStyle,
+              height: theme.name === 'dark' ? '180px' : '64px',
+              maxWidth: '90%'
+            }}
           />
         </div>
         
