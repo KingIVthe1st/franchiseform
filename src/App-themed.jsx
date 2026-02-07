@@ -49,6 +49,15 @@ function App({ theme }) {
     
     const formDataToSend = new FormData()
     
+    // Web3Forms access key
+    formDataToSend.append('access_key', 'e82c3e4d-b8f5-4e3a-9c4b-3f1d8e9a7b6c')
+    formDataToSend.append('subject', 'New FDD Questionnaire Submission - MyFranchiseMachine')
+    formDataToSend.append('from_name', 'FDD Form - MyFranchiseMachine')
+    formDataToSend.append('redirect', 'https://intake.franchisemachine.com/')
+    
+    // Set recipient email
+    formDataToSend.append('email', 'ivanleejackson@gmail.com')
+    
     Object.keys(formData).forEach(key => {
       if (formData[key] instanceof File) {
         formDataToSend.append(key, formData[key])
@@ -60,7 +69,7 @@ function App({ theme }) {
     })
     
     try {
-      const response = await fetch('https://intake.myfranchisemachine.com/submit-form.php', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formDataToSend
       })
