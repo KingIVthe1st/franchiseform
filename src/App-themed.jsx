@@ -50,7 +50,7 @@ function App({ theme }) {
     const formDataToSend = new FormData()
     
     // Web3Forms access key
-    formDataToSend.append('access_key', 'e82c3e4d-b8f5-4e3a-9c4b-3f1d8e9a7b6c')
+    formDataToSend.append('access_key', '640b6e44-f07d-4161-a972-2e297273fd85')
     formDataToSend.append('subject', 'New FDD Questionnaire Submission - MyFranchiseMachine')
     formDataToSend.append('from_name', 'FDD Form - MyFranchiseMachine')
     formDataToSend.append('redirect', 'https://intake.franchisemachine.com/')
